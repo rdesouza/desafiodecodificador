@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criptografia</title>
+</head>
+<body>
+    <input type="text" id="texto__entrada">
+    <button id="botoes__criptografar">Criptografar</button>
+    <button id="botoes__descriptografar">Descriptografar</button>
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('botoes__criptografar').addEventListener('click', () => {
+            const textoEntrada = document.getElementById('texto__entrada').value;
+            const textoCriptografado = criptografar(textoEntrada);
+            document.getElementById('resultado').innerText = textoCriptografado;
+        });
+
+        document.getElementById('botoes__descriptografar').addEventListener('click', () => {
+            const textoCriptografado = document.getElementById('resultado').innerText;
+            const textoDescriptografado = descriptografar(textoCriptografado);
+            document.getElementById('resultado').innerText = textoDescriptografado;
+        });
+
+        function criptografar(texto) {
+            const vogais = {
+                'a': '1',
+                'e': '2',
+                'i': '3',
+                'o': '4',
+                'u': '5'
+            };
+            return texto.replace(/[aeiou]/g, vogal => vogais[vogal]);
+        }
+
+        function descriptografar(textoCriptografado) {
+            const vogais = {
+                '1': 'a',
+                '2': 'e',
+                '3': 'i',
+                '4': 'o',
+                '5': 'u'
+            };
+            return textoCriptografado.replace(/[12345]/g, vogal => vogais[vogal]);
+        }
+    </script>
+</body>
+</html>

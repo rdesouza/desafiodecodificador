@@ -1,0 +1,732 @@
+/*config para telas 1080p - Default*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    background-color: #E5E5E5;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    width: 75vw;
+    position: fixed;
+    height: 95vh;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(icone.png);
+    background-repeat: no-repeat;
+    border: dotted 0.5px;
+}
+
+#main__div__modifica__texto {
+    align-items: flex-start;
+    height: 700px;
+    border: dotted 0.5px;
+}
+
+
+
+
+#digitar {
+    display: flex;
+    color: darkblue;
+    flex-flow: wrap;
+    background-color: #E5E5E5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    border: none;
+    text-align: right;
+    border: dotted 0.5px;
+}
+
+#fieldset {
+
+    text-indent: 14.5rem;
+    width: 50vw;
+    margin: 10px;
+    padding: 5px;
+    height: 55vh;
+    border: dotted 0.5px;
+
+}
+
+#botoes {
+    display: flex;
+    flex-flow: wrap;
+    width: 680px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: dotted 0.5px;
+}
+
+#exclamacao {
+    flex-flow: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 680px;
+    padding-bottom: 5px;
+    border: dotted 0.5px;
+}
+
+#botoes__criptografar {
+    width: 300px;
+    flex-flow: wrap;
+    display: flex;
+    background-color: blue;
+    color: white;
+    height: 57px;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+#botoes__descriptografar {
+    width: 300px;
+    display: flex;
+    background-color: #D9D9D9;
+    color: darkblue;
+    border: darkblue 0.5px solid;
+    flex-flow: wrap;
+    height: 57px;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+aside {
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap column;
+    background-color: white;
+    border-radius: 32px;
+    width: 20vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+aside #conteudo {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+
+
+#mulher_comlupa {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+#aside__texto {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+aside div p {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-size: 1rem;
+    height: 60px;
+}
+
+
+#botoes__copiar {
+    width: 250px;
+    margin-top: 90px;
+    display: flex;
+    flex-flow: wrap column;
+    background-color: #D9D9D9;
+    color: darkblue;
+    border: darkblue 0.5px solid;
+    height: 57px;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*fim das config para telas 1080p */
+
+/*
+MEDIA QUERIES
+*/
+
+
+/* telas ate 600px*/
+@media screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background: lightgreen;
+        flex-flow:wrap column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: wrap column;
+        width: 95vw;
+        height: 100vh;
+        background-image: url(icone.png);
+        background-repeat: no-repeat;
+        background-size: 60px 30px;
+        border: dotted 0.5px red;
+    }
+
+    #digitar {
+        display: flex;
+        width: 50vw;
+        height: 5vh;
+        flex-flow: wrap column;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #div__fieldset {
+        display: flex;
+        flex-flow: wrap;
+        height: 40vh;
+        width: 80vh;
+        border: dotted pink;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #fieldset {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        height: 32vh;
+        width: 95vw;
+        border: dotted;
+    }
+
+    #exclamacao {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 1px;
+        width: 45vw;
+        height: 3vh;
+    }
+
+
+
+    #botoes {
+        height: 10vh;
+        width: 60vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+
+    #botoes__criptografar {
+        width: 25vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 35px;
+    }
+
+
+    #botoes__descriptografar {
+        width: 25vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+    }
+
+
+    aside {
+        border: dotted black;
+        display: flex;
+        width: 85vw;
+        height: 40vh;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+
+    #mulher_comlupa {
+        width: 40vw;
+        height: 25vh;
+        border: dotted;
+        border-radius: 25px;
+
+    }
+
+
+    #aside__conteudo {
+        width: 40vw;
+        height: 25vh;
+        border: dotted 0.5px;
+        border-radius: 25px;
+        flex-flow: wrap column;
+        border: dotted 0.5px green;
+        justify-content: space-between;
+    }
+
+
+    #botoes__copiar {
+        width: 25vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: wrap;
+        display: flex;
+        margin-top: 5px;
+        margin-left: 180px;  
+    }
+
+
+
+}
+
+/*telas de mais de 600px*/
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background: lightsalmon;
+        flex-flow: column wrap;    
+        align-items: center;   
+        justify-content: center;
+        margin: 5px;
+    }
+
+    main{
+        display: flex;
+        flex-flow: wrap;     
+        width: 95vw;
+        height: 98vh;
+        margin-right: 10px;
+        background-image: url(icone.png);
+        background-repeat: no-repeat;
+        border: dotted;
+
+    }
+    
+    #digitar{
+        width: 95vw;
+        text-align: center;
+    }
+
+    #div__fieldset{
+        display: flex;
+        flex-flow: wrap;
+        height:  40vh;
+        width: 50vh;
+        margin-top: 50px;
+        border: dotted pink;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #fieldset{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        height: 32vh;
+        width: 95vw;
+        border: dotted;
+    }
+
+    #exclamacao{
+        margin-top: 1px;
+    }
+
+    
+
+    #botoes{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: s pace-between;
+        align-items: center;
+        
+        
+    }
+
+
+    #botoes__criptografar{
+        width:40vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 35px;
+    }
+
+    
+#botoes__descriptografar{
+        width:40vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+}
+
+
+aside{
+    border: dotted black;
+    display: flex;
+    width: 95vw;
+    height: 34vh;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    
+}
+
+
+#mulher_comlupa{   
+ display: none;
+}
+
+
+
+aside #aside__conteudo{
+    width: 91vw;
+    height: 17vh;
+    border-radius: 15px; 
+    flex-flow: wrap;
+    border: dotted 0.5px green;
+    justify-content: space-between;
+    
+}
+
+
+#texto__normal{
+    display: none;
+}
+
+#botoes__copiar{
+    width: 50vw;
+    height: 10vh;
+    flex-flow: wrap column;
+    margin-top: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+}
+
+/*telas de no minimo 768px*/
+@media screen and (min-widht: 768px) {
+    
+}
+
+/*ex: telas de no maximo 768px*/
+@media screen and (max-widht: 768px) {}
+
+
+@media screen and (max-widht: 992px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background: lightgreen;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: wrap column;
+        width: 98vw;
+        height: 80vh;
+        background-image: url(icone.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        border: dotted 0.5px;
+
+    }
+
+    #digitar {
+        width: 15vw;
+    }
+
+    #div__fieldset {
+        display: flex;
+        flex-flow: wrap;
+        height: 40vh;
+        width: 35vh;
+        border: dotted pink;
+    }
+
+
+    #fieldset {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        height: 32vh;
+        width: 95vw;
+        border: dotted;
+    }
+
+    #exclamacao {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 1px;
+        width: 25vw;
+        height: 3vh;
+    }
+
+
+
+    #botoes {
+        height: 10vh;
+        width: 70vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+
+    #botoes__criptografar {
+        width: 25vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 35px;
+    }
+
+
+    #botoes__descriptografar {
+        width: 25vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+    }
+
+
+    aside {
+        border: dotted black;
+        display: flex;
+        width: 20vw;
+        height: 70vh;
+        flex-flow: wrap column;
+        justify-content: space-between;
+    }
+
+
+    #mulher_comlupa {
+        width: 40vw;
+        height: 19vh;
+        border: dotted;
+        border-radius: 25px;
+    }
+
+
+    #aside__conteudo {
+        width: 40vw;
+        height: 19vh;
+        border: dotted 0.5px;
+        border-radius: 25px;
+        flex-flow: wrap column;
+        border: dotted 0.5px green;
+        justify-content: space-between;
+    }
+
+
+    #botoes__copiar {
+        width: 25vw;
+        height: 35px;
+        flex-flow: wrap column;
+        margin-right: 900px;
+        width: 40vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+    }
+
+}
+/*ex: telas de no minimo 992px*/
+@media screen and (min-widht: 992px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background: lightgreen;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: wrap column;
+        width: 98vw;
+        height: 80vh;
+        background-image: url(icone.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        border: dotted 0.5px;
+
+    }
+
+    #digitar {
+        width: 15vw;
+    }
+
+    #div__fieldset {
+        display: flex;
+        flex-flow: wrap;
+        height: 40vh;
+        width: 35vh;
+        border: dotted pink;
+    }
+
+
+    #fieldset {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        height: 32vh;
+        width: 95vw;
+        border: dotted;
+    }
+
+    #exclamacao {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 1px;
+        width: 25vw;
+        height: 3vh;
+    }
+
+
+
+    #botoes {
+        height: 10vh;
+        width: 70vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+
+    #botoes__criptografar {
+        width: 25vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 35px;
+    }
+
+
+    #botoes__descriptografar {
+        width: 25vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+    }
+
+
+    aside {
+        border: dotted black;
+        display: flex;
+        width: 20vw;
+        height: 70vh;
+        flex-flow: wrap column;
+        justify-content: space-between;
+    }
+
+
+    #mulher_comlupa {
+        width: 40vw;
+        height: 19vh;
+        border: dotted;
+        border-radius: 25px;
+    }
+
+
+    #aside__conteudo {
+        width: 40vw;
+        height: 19vh;
+        border: dotted 0.5px;
+        border-radius: 25px;
+        flex-flow: wrap column;
+        border: dotted 0.5px green;
+        justify-content: space-between;
+    }
+
+
+    #botoes__copiar {
+        width: 25vw;
+        height: 35px;
+        flex-flow: wrap column;
+        margin-right: 900px;
+        width: 40vw;
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px;
+    }
+}
+
+/*ex: telas de no minimo 1200px*/
+@media screen and (min-widht: 1200px) {}
+
+/*
+MEDIA QUERIES
+*/
