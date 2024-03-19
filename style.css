@@ -1,4 +1,4 @@
-/*config para telas 1080p - Default*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +17,14 @@ ul {
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: wrap column;
     background-color: #E5E5E5;
     align-items: center;
     justify-content: center;
 }
-
+/*config para telas 1080p - Default
 
 main {
     width: 75vw;
@@ -36,7 +37,7 @@ main {
     justify-content: center;
     background-image: url(icone.png);
     background-repeat: no-repeat;
-    border: dotted 0.5px;
+    border: solid  5px;
 }
 
 #main__div__modifica__texto {
@@ -124,8 +125,8 @@ aside {
     flex-flow: wrap column;
     background-color: white;
     border-radius: 32px;
-    width: 20vw;
-    height: 90vh;
+    width: 200vw;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -182,154 +183,16 @@ aside div p {
 
 }
 
-/*fim das config para telas 1080p */
-
-/*
+/*fim das config para telas 1080p 
 MEDIA QUERIES
 */
 
 
-/* telas ate 600px*/
-@media screen and (min-width: 600px) {
-    body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        background: lightgreen;
-        flex-flow:wrap column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-    }
-
-    main {
-        display: flex;
-        flex-flow: wrap column;
-        width: 95vw;
-        height: 100vh;
-        background-image: url(icone.png);
-        background-repeat: no-repeat;
-        background-size: 60px 30px;
-        border: dotted 0.5px red;
-    }
-
-    #digitar {
-        display: flex;
-        width: 50vw;
-        height: 5vh;
-        flex-flow: wrap column;
-        justify-content: flex-start;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    #div__fieldset {
-        display: flex;
-        flex-flow: wrap;
-        height: 40vh;
-        width: 80vh;
-        border: dotted pink;
-        justify-content: center;
-        align-items: center;
-
-    }
+/*telas de 1 ate 300px*/
+@media screen and (max-width: 300px){}
 
 
-    #fieldset {
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
-        align-items: center;
-        height: 32vh;
-        width: 95vw;
-        border: dotted;
-    }
-
-    #exclamacao {
-        display: flex;
-        flex-flow: wrap;
-        margin-top: 1px;
-        width: 45vw;
-        height: 3vh;
-    }
-
-
-
-    #botoes {
-        height: 10vh;
-        width: 60vw;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        align-items: center;
-
-
-    }
-
-
-    #botoes__criptografar {
-        width: 25vw;
-        height: 10vh;
-        display: flex;
-        flex-flow: wrap;
-        margin-bottom: 35px;
-    }
-
-
-    #botoes__descriptografar {
-        width: 25vw;
-        height: 10vh;
-        display: flex;
-        flex-flow: wrap;
-        margin-bottom: 30px;
-    }
-
-
-    aside {
-        border: dotted black;
-        display: flex;
-        width: 85vw;
-        height: 40vh;
-        flex-flow: wrap;
-        justify-content: space-between;
-    }
-
-
-    #mulher_comlupa {
-        width: 40vw;
-        height: 25vh;
-        border: dotted;
-        border-radius: 25px;
-
-    }
-
-
-    #aside__conteudo {
-        width: 40vw;
-        height: 25vh;
-        border: dotted 0.5px;
-        border-radius: 25px;
-        flex-flow: wrap column;
-        border: dotted 0.5px green;
-        justify-content: space-between;
-    }
-
-
-    #botoes__copiar {
-        width: 25vw;
-        height: 10vh;
-        display: flex;
-        flex-flow: wrap;
-        display: flex;
-        margin-top: 5px;
-        margin-left: 180px;  
-    }
-
-
-
-}
-
-/*telas de mais de 600px*/
+/*telas de 300 ate 600px*/
 @media screen and (max-width: 600px) {
     body{
         height: 100vh;
@@ -350,22 +213,22 @@ MEDIA QUERIES
         margin-right: 10px;
         background-image: url(icone.png);
         background-repeat: no-repeat;
-        border: dotted;
 
     }
     
     #digitar{
         width: 95vw;
         text-align: center;
+        border: none;
+        background: lightsalmon;
     }
 
     #div__fieldset{
         display: flex;
         flex-flow: wrap;
         height:  40vh;
-        width: 50vh;
+        width: 60vh;
         margin-top: 50px;
-        border: dotted pink;
         justify-content: center;
         align-items: center;
 
@@ -379,54 +242,61 @@ MEDIA QUERIES
         align-items: center;
         height: 32vh;
         width: 95vw;
-        border: dotted;
     }
 
     #exclamacao{
-        margin-top: 1px;
+        margin-right: 3vw;
+        padding-left: 4vw;
+        background-image: url(exclamacao.png);
+        background-repeat: no-repeat;
     }
-
     
 
     #botoes{
         height: 10vh;
-        width: 100vw;
+        width: 90vw;
         display: flex;
         flex-flow: wrap;
-        justify-content: s pace-between;
+        justify-content: space-between;
         align-items: center;
-        
-        
-    }
+        margin-top: 1vh;
+        margin-left: 2vw;
+}
 
 
     #botoes__criptografar{
         width:40vw;
         height: 10vh;
         display: flex;
-        flex-flow: wrap;
-        margin-bottom: 35px;
+        flex-flow: wrap column;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        color:salmon;
+        border: salmon 1px solid;
     }
 
     
 #botoes__descriptografar{
-        width:40vw;
-        height: 10vh;
-        display: flex;
-        flex-flow: wrap;
-        margin-bottom: 30px;
+    width:40vw;
+    height: 10vh;
+    color:white;
+    background-color: salmon;;
+    display: flex;
+    flex-flow: wrap column;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center
 }
 
 
 aside{
-    border: dotted black;
     display: flex;
     width: 95vw;
     height: 34vh;
     flex-flow: wrap column;
     justify-content: space-between;
-    margin-bottom: 70px;
-    
+    margin: 5px;    
 }
 
 
@@ -437,8 +307,9 @@ aside{
 
 
 aside #aside__conteudo{
+    margin: 4px;
     width: 91vw;
-    height: 17vh;
+    height: 20vh;
     border-radius: 15px; 
     flex-flow: wrap;
     border: dotted 0.5px green;
@@ -446,29 +317,203 @@ aside #aside__conteudo{
     
 }
 
+#aside__texto{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold
+}
 
 #texto__normal{
-    display: none;
+    text-align: center;
 }
+
+
 
 #botoes__copiar{
-    width: 50vw;
-    height: 10vh;
-    flex-flow: wrap column;
-    margin-top: 15px;
-    margin-right: 10px;
-    display: flex;
+    width:40vw;
+        height: 10vh;
+        display: flex;
+        margin-left: 25vw;
+        flex-flow: wrap column;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        color:salmon;
+        border: salmon 1px solid;
+}
 }
 
-}
+/* telas maiores que 600px*/
+@media screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background: lightgreen;
+        flex-flow:wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*telas de no minimo 768px*/
-@media screen and (min-widht: 768px) {
+    main {
+        display: flex;
+        position: static;
+        flex-flow: wrap column;
+        width: 70vw;
+        height: 85vh;
+        background-image: url(icone.png);
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #digitar {
+        display: flex;
+        width: 50vw;
+        height: 3vh;
+        flex-flow: wrap column;
+        justify-content: flex-start;
+        text-align: start;
+        text-indent: 8rem;
+        border: none;
+        background: lightgreen;
+        font-size: 1.7rem;
+    }
+
+    #div__fieldset {
+        display: flex;
+        flex-flow: wrap;
+        height: 58vh;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+
+    #fieldset {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        height: 58vh;
+        width: 50vw;
+    }
+
+    #exclamacao{
+        background-image: url('exclamacao.png');
+        background-repeat: no-repeat;
+        background-position: 8%;
+        display: flex;
+        flex-flow: wrap;
+        width: 40vw;
+        height: 2vh;
+        padding-left: 4vw;
+        margin-top: 4vh;
+    }
+
+    #botoes {
+        height: 8vh;
+        width: 34vw;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+
+    #botoes__criptografar {
+        width: 15vw;
+        height: 8vh;
+        flex-flow: wrap;
+        display: flex;
+        background-color: white;
+        color: darkgreen;
+        border-radius: 18px;
+        border: darkgreen 1px solid;
+        align-items: center;
+        justify-content: center;
+    }
     
+    #botoes__descriptografar {
+        width: 15vw;
+        height: 8vh;
+        display: flex;
+        background-color: darkgreen;
+        color: white;
+        border: darkblue 0.5px solid;
+        flex-flow: wrap;
+        border-radius: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    aside {
+        position: static;
+        border: solid 1px;
+        border-radius: 15px;
+        display: flex;
+        width: 18vw;
+        height: 85vh;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #mulher_comlupa {
+        margin-top: 5vh;
+        display: flex;
+        flex-flow: wrap column;
+        width: 17vw;
+        height: 30vh;
+        border-radius: 25px;
+        align-items: center;
+    }
+
+
+    #aside__conteudo {
+        margin-top: 2vh;
+        width: 17vw;
+        height: 15vh;
+        border: dotted 0.5px;
+        border-radius: 25px;
+        flex-flow: wrap column;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    #aside__texto{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    #texto__normal{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #botoes__copiar {
+        width: 15vw;
+        height: 8vh;
+        flex-flow: wrap;
+        display: flex;
+        background-color: white;
+        color: darkgreen;
+        border-radius: 18px;
+        border: darkgreen 1px solid;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-/*ex: telas de no maximo 768px*/
-@media screen and (max-widht: 768px) {}
+@media screen and (max-width: 800px){
+
+}
 
 
 @media screen and (max-widht: 992px) {
@@ -477,7 +522,7 @@ aside #aside__conteudo{
         width: 100vw;
         display: flex;
         background: lightgreen;
-        flex-flow: column wrap;
+        flex-flow: wrap column;
         align-items: center;
         justify-content: center;
         margin: 5px;
@@ -486,12 +531,12 @@ aside #aside__conteudo{
     main {
         display: flex;
         flex-flow: wrap column;
-        width: 98vw;
-        height: 80vh;
+        width: 100vw;
+        height:90vh;
         background-image: url(icone.png);
         background-repeat: no-repeat;
         background-size: 150px 150px;
-        border: dotted 0.5px;
+        border: dotted 1px darkgreen;
 
     }
 
@@ -535,8 +580,6 @@ aside #aside__conteudo{
         flex-flow: wrap;
         justify-content: space-between;
         align-items: center;
-
-
     }
 
 
@@ -559,8 +602,8 @@ aside #aside__conteudo{
     aside {
         border: dotted black;
         display: flex;
-        width: 20vw;
-        height: 70vh;
+        width: 30vw;
+        height: 50vh;
         flex-flow: wrap column;
         justify-content: space-between;
     }
@@ -597,6 +640,7 @@ aside #aside__conteudo{
     }
 
 }
+
 /*ex: telas de no minimo 992px*/
 @media screen and (min-widht: 992px) {
     body {
@@ -618,7 +662,7 @@ aside #aside__conteudo{
         background-image: url(icone.png);
         background-repeat: no-repeat;
         background-size: 150px 150px;
-        border: dotted 0.5px;
+        border: solid 1px red;
 
     }
 
